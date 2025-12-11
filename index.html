@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frozen Fruit - Rescued & Delicious</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Outfit:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Mode Switcher -->
+    <div class="mode-switch-container">
+      <div class="mode-toggle">
+        <button class="mode-btn active" id="btn-individual">Individuals</button>
+        <button class="mode-btn" id="btn-business">Businesses</button>
+      </div>
+    </div>
+
+    <!-- INDIVIDUAL VIEW -->
+    <div id="view-individual">
+      <!-- Top Bar -->
+      <div class="top-bar">
+        Free Shipping on Orders Over €35
+      </div>
+
+      <!-- Main Header -->
+      <header class="main-header">
+        <div class="container header-container">
+          <a href="#" class="logo">Frozen Fruit</a>
+          <nav class="nav-links">
+            <a href="#flavors">Flavors</a>
+            <a href="#problem">Why Us</a>
+            <a href="#solution">Process</a>
+            <a href="#social-proof">Reviews</a>
+          </nav>
+          <div class="header-actions">
+            <a href="/account.html" class="icon-btn" aria-label="Account">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </a>
+            <a href="/cart.html" class="icon-btn" aria-label="Cart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section (Banner Style) -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-banner">
+            <div class="hero-content">
+              <h1>Healthy Snacks,<br>Zero Waste.</h1>
+              <p>Delicious frozen fruit rescued from local fruit suppliers. Good for you, good for the planet.</p>
+              <a href="/shop.html" class="btn btn-primary">Shop Now</a>
+            </div>
+            <div class="hero-image-container">
+              <img src="/hero-image.png" alt="Frozen Fruit Splash" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main>
+        <!-- Why Choose Section (Formerly Problem) -->
+        <section id="problem" class="problem-section">
+          <div class="container">
+            <h2>Why Choose Frozen Fruit?</h2>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <span class="stat-icon">🌍</span>
+                <h4>Sustainable</h4>
+                <p>We rescue perfectly good fruit from being wasted.</p>
+              </div>
+              <div class="stat-card">
+                <span class="stat-icon">⚡</span>
+                <h4>Convenient</h4>
+                <p>Washed, chopped, and ready to eat or blend.</p>
+              </div>
+              <div class="stat-card">
+                <span class="stat-icon">🥗</span>
+                <h4>Healthy</h4>
+                <p>Flash-frozen to lock in all the nutrients.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Detailed Process Section (Replacing simple steps) -->
+        <section id="solution" class="solution-section">
+          <div class="container">
+            <h2 class="text-center" style="margin-bottom: var(--spacing-lg);">From Orchard to Freezer</h2>
+
+            <!-- Step 1: Sourcing -->
+            <div class="feature-row">
+              <div class="feature-image">
+                <img src="/sourcing-farm.png" alt="Fruit Orchard" />
+              </div>
+              <div class="feature-content">
+                <h3>1. The Rescue Mission</h3>
+                <p>It starts at local orchards. We partner with farmers to buy their "ugly" or surplus fruit—fruit that
+                  is perfectly ripe and delicious but might have a small blemish or be the wrong shape for supermarkets.
+                </p>
+                <p>By buying this fruit, we help farmers reduce waste and ensure they get paid for their hard work. You
+                  get the peak of the harvest, full of flavor.</p>
+              </div>
+            </div>
+
+            <!-- Step 2: Freezing -->
+            <div class="feature-row reverse">
+              <div class="feature-image">
+                <img src="/process-freezing.png" alt="Flash Freezing Process" />
+              </div>
+              <div class="feature-content">
+                <h3>2. Flash-Freezing </h3>
+                <p>Time is of the essence. Within hours of harvest, the fruit is washed, chopped, and flash-frozen at
+                  extremely low temperatures (-40°C).</p>
+                <p>This rapid freezing process locks in vitamins, minerals, and that "just-picked" taste. No
+                  preservatives, no added sugar, just 100% pure fruit.</p>
+              </div>
+            </div>
+
+            <!-- Step 3: Enjoy (Simplified) -->
+            <div class="text-center" style="margin-top: var(--spacing-lg);">
+              <h3>3. Ready to Enjoy</h3>
+              <p style="max-width: 600px; margin: 0 auto;">Delivered straight to your door. Perfect for smoothies,
+                baking, or just snacking right out of the bag.</p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Flavors Section -->
+        <section id="flavors" class="flavors-section">
+          <div class="container">
+            <h2 class="text-center">Our Flavors</h2>
+            <div class="flavors-grid">
+              <!-- Product 1 -->
+              <div class="flavor-card">
+                <div class="flavor-image-wrapper">
+                  <img src="/flavor-grapes-v2.png" alt="Frozen Grapes" class="flavor-image" />
+                  <span class="badge-new">Best Seller</span>
+                </div>
+                <div class="flavor-content">
+                  <div class="flavor-header">
+                    <h4>Frozen Grapes</h4>
+                    <span class="price">€4.99</span>
+                  </div>
+                  <p>Nature's candy. Sweet and crunchy.</p>
+                  <button class="btn btn-cart add-to-cart" data-id="1" data-name="Frozen Grapes" data-price="4.99">Add
+                    to Cart</button>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="flavor-card">
+                <div class="flavor-image-wrapper">
+                  <img src="/flavor-mango-v2.png" alt="Mango Chunks" class="flavor-image" />
+                </div>
+                <div class="flavor-content">
+                  <div class="flavor-header">
+                    <h4>Mango Chunks</h4>
+                    <span class="price">€5.49</span>
+                  </div>
+                  <p>Tropical paradise in every bite.</p>
+                  <button class="btn btn-cart add-to-cart" data-id="2" data-name="Mango Chunks" data-price="5.49">Add to
+                    Cart</button>
+                </div>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="flavor-card">
+                <div class="flavor-image-wrapper">
+                  <img src="/flavor-blueberries-v2.png" alt="Blueberries" class="flavor-image" />
+                </div>
+                <div class="flavor-content">
+                  <div class="flavor-header">
+                    <h4>Blueberries</h4>
+                    <span class="price">€6.99</span>
+                  </div>
+                  <p>Antioxidant-rich superfood.</p>
+                  <button class="btn btn-cart add-to-cart" data-id="3" data-name="Blueberries" data-price="6.99">Add to
+                    Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Social Proof Section (Redesign) -->
+        <section id="social-proof" class="social-proof-section">
+          <div class="container text-center">
+            <span class="subtext">Communtiy</span>
+            <h2>Join the Movement</h2>
+            <p class="section-desc">Over 10,000 happy snackers saving the planet one bite at a time.</p>
+
+            <div class="testimonials-grid">
+              <div class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">Best snack ever! I love that I'm helping the planet.</p>
+                <div class="testimonial-user">
+                  <span class="avatar">S</span>
+                  <span class="author">Sarah M.</span>
+                </div>
+              </div>
+              <div class="testimonial-card featured">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">My kids think these are candy. Win-win!</p>
+                <div class="testimonial-user">
+                  <span class="avatar">M</span>
+                  <span class="author">Mike T.</span>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">So convenient for my morning smoothies.</p>
+                <div class="testimonial-user">
+                  <span class="avatar">J</span>
+                  <span class="author">Jessica R.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-cta">
+              <a href="#" class="btn btn-white">Follow @FrozenFruit</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div> <!-- End Individual View -->
+
+    <!-- BUSINESS VIEW -->
+    <div id="view-business" class="hidden">
+      <!-- Business Header -->
+      <header class="main-header">
+        <div class="container header-container">
+          <a href="#" class="logo">Frozen Fruit <span
+              style="font-size: 0.5em; vertical-align: up; opacity: 0.7;">Business</span></a>
+          <div class="header-actions">
+            <a href="#contact-form" class="btn btn-primary">Contact Sales</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Business Hero -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-banner">
+            <div class="hero-content">
+              <h1>Premium Fruit Solutions</h1>
+              <p>Reliable, sustainable, and high-quality frozen fruit supply for your business needs.</p>
+              <a href="#contact-form" class="btn btn-primary">Get a Quote</a>
+            </div>
+            <div class="hero-image-container">
+              <img src="/b2b-hero.png" alt="Business Fruit Supply Warehouse" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main>
+        <!-- Business About / Approach -->
+        <section class="section-padding" style="background-color: var(--color-white);">
+          <div class="container">
+            <div class="feature-row">
+              <div class="feature-content" style="padding-right: var(--spacing-md);">
+                <h2>Our Business Approach</h2>
+                <p>At Frozen Fruit Business, we understand that reliability is just as important as quality. We have
+                  built a supply chain that ensures you get consistent, high-grade fruit year-round, regardless of
+                  seasonal fluctuations.</p>
+                <p>We work directly with certified growers to rescue surplus harvest that meets our strict aesthetic and
+                  taste standards for processing. By partnering with us, you not only lower your food costs but also
+                  contribute to a significant reduction in global food waste.</p>
+              </div>
+              <div class="feature-image">
+                <img src="/business_quality_control_1765456788082.png" alt="Quality Control Inspection" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Business Benefits -->
+        <section class="problem-section">
+          <div class="container">
+            <h2>Partner With Us</h2>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <span class="stat-icon">📦</span>
+                <h4>Bulk Supply</h4>
+                <p>Consistent volume for manufacturing and food service.</p>
+              </div>
+              <div class="stat-card">
+                <span class="stat-icon">🤝</span>
+                <h4>Reliable Quality</h4>
+                <p>Rigorous quality control and safety standards.</p>
+              </div>
+              <div class="stat-card">
+                <span class="stat-icon">🌱</span>
+                <h4>Sustainable</h4>
+                <p>Improve your supply chain's carbon footprint.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Lead Gen Form -->
+        <section id="contact-form" class="solution-section">
+          <div class="container">
+            <h2 class="text-center">Request a Quote</h2>
+            <div
+              style="max-width: 600px; margin: 0 auto; background: var(--color-white); padding: var(--spacing-md); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+              <form id="business-form" style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+                <div>
+                  <label
+                    style="display: block; margin-bottom: 8px; font-weight: bold; color: var(--color-deep-purple);">Company
+                    Name</label>
+                  <input type="text" required
+                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: var(--radius-sm); font-family: var(--font-body);"
+                    placeholder="e.g. Smoothies Inc." />
+                </div>
+                <div>
+                  <label
+                    style="display: block; margin-bottom: 8px; font-weight: bold; color: var(--color-deep-purple);">Contact
+                    Person</label>
+                  <input type="text" required
+                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: var(--radius-sm); font-family: var(--font-body);"
+                    placeholder="Jane Doe" />
+                </div>
+                <div>
+                  <label
+                    style="display: block; margin-bottom: 8px; font-weight: bold; color: var(--color-deep-purple);">Email
+                    Address</label>
+                  <input type="email" required
+                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: var(--radius-sm); font-family: var(--font-body);"
+                    placeholder="jane@company.com" />
+                </div>
+                <div>
+                  <label
+                    style="display: block; margin-bottom: 8px; font-weight: bold; color: var(--color-deep-purple);">Estimated
+                    Monthly Volume (kg)</label>
+                  <select
+                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: var(--radius-sm); font-family: var(--font-body);">
+                    <option>Less than 100kg</option>
+                    <option>100kg - 500kg</option>
+                    <option>500kg - 1000kg</option>
+                    <option>1000kg+</option>
+                  </select>
+                </div> <!-- Corrected closing div tag -->
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-sm);">Submit
+                  Inquiry</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div> <!-- End Business View -->
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Frozen Fruit. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

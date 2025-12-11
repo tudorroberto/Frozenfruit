@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - Frozen Fruit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            Free Shipping on Orders Over €35
+        </div>
+
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="container header-container">
+                <a href="/" class="logo">Frozen Fruit</a>
+                <nav class="nav-links">
+                    <a href="/#flavors">Flavors</a>
+                    <a href="/#problem">Why Us</a>
+                    <a href="/#solution">Process</a>
+                    <a href="/#social-proof">Reviews</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="/account.html" class="icon-btn">👤</a>
+                    <a href="/cart.html" class="icon-btn">🛒</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="container" style="padding: 4rem 0;">
+                <h1 class="text-center" style="margin-bottom: 3rem;">Shop All Flavors</h1>
+
+                <div class="flavors-grid">
+                    <!-- Product 1 -->
+                    <div class="flavor-card">
+                        <img src="/frozen-grapes.png" alt="Frozen Grapes" class="flavor-image">
+                        <div class="flavor-content">
+                            <h3>Frozen Grapes</h3>
+                            <p>Sweet, crunchy, and refreshing.</p>
+                            <p class="text-orange" style="font-weight: bold; font-size: 1.25rem; margin-bottom: 1rem;">
+                                €4.99</p>
+                            <button class="btn btn-primary add-to-cart" data-id="grapes" data-name="Frozen Grapes"
+                                data-price="4.99">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="flavor-card">
+                        <img src="/mango-chunks.png" alt="Mango Chunks" class="flavor-image">
+                        <div class="flavor-content">
+                            <h3>Mango Chunks</h3>
+                            <p>Tropical paradise in every bite.</p>
+                            <p class="text-orange" style="font-weight: bold; font-size: 1.25rem; margin-bottom: 1rem;">
+                                €5.49</p>
+                            <button class="btn btn-primary add-to-cart" data-id="mango" data-name="Mango Chunks"
+                                data-price="5.49">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="flavor-card">
+                        <img src="/blueberries.png" alt="Blueberries" class="flavor-image">
+                        <div class="flavor-content">
+                            <h3>Blueberries</h3>
+                            <p>Antioxidant-rich tiny bursts of joy.</p>
+                            <p class="text-orange" style="font-weight: bold; font-size: 1.25rem; margin-bottom: 1rem;">
+                                €5.99</p>
+                            <button class="btn btn-primary add-to-cart" data-id="blueberries" data-name="Blueberries"
+                                data-price="5.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Frozen Fruit. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

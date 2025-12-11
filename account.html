@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account - Frozen Fruit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            Free Shipping on Orders Over €35
+        </div>
+
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="container header-container">
+                <a href="/" class="logo">Frozen Fruit</a>
+                <nav class="nav-links">
+                    <a href="/#flavors">Flavors</a>
+                    <a href="/#problem">Why Us</a>
+                    <a href="/#solution">Process</a>
+                    <a href="/#social-proof">Reviews</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="/account.html" class="icon-btn">👤</a>
+                    <a href="/cart.html" class="icon-btn">🛒</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="container" style="padding: 4rem 0; max-width: 600px;">
+                <h1 class="text-center">My Account</h1>
+                <div
+                    style="background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <h2 class="text-center" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Login</h2>
+                    <form style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div>
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Email</label>
+                            <input type="email" placeholder="Enter your email"
+                                style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 8px;">
+                        </div>
+                        <div>
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Password</label>
+                            <input type="password" placeholder="Enter your password"
+                                style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 8px;">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Sign
+                            In</button>
+                    </form>
+                    <p class="text-center" style="margin-top: 1.5rem;">Don't have an account? <a href="#"
+                            class="text-orange">Sign up</a></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Frozen Fruit. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
